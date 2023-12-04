@@ -3,15 +3,15 @@ package principal;
 import java.util.Scanner;
 
 public class Jogo {
-	private char pos00 = ' ';
-	private char pos01 = ' ';
-	private char pos02 = ' ';
-	private char pos10 = ' ';
-	private char pos11 = ' ';
-	private char pos12 = ' ';
-	private char pos20 = ' ';
-	private char pos21 = ' ';
-	private char pos22 = ' ';
+	private char pos00;
+	private char pos01;
+	private char pos02;
+	private char pos10;
+	private char pos11;
+	private char pos12;
+	private char pos20;
+	private char pos21;
+	private char pos22;
 
 	static Scanner sc = new Scanner(System.in);
 
@@ -99,7 +99,8 @@ public class Jogo {
 			mostrarJogo();
 			System.out.println("QUEM GANHOU FOI: " + jogadorFinal.getNome().toUpperCase());
 		} else {
-			System.out.println("EMPATE");
+			mostrarJogo();
+			System.out.println("DEU VELHA");
 		}
 	}
 
